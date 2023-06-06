@@ -1,0 +1,64 @@
+<!-- 
+Título: Juego del Tres en Raya.
+Nivel Educativo: Ciclo Formativo de Grado Superior
+Curso: DAM, DAW o ASIR
+Conocimientos del alumnado I: Tipos de Datos, Constantes y Variables 
+Conocimientos del alumnado II: Operaciones Aritméticas, Lógicas y Relacionales
+Conocomientos del alumnado III: Instrucciones de Control Condicional
+Conocomientos del alumnado IV: Instrucciones de Control Iterativa
+Conocomientos del alumnado V: Estructuras de datos (Vectores)
+Fecha: 05 / 06 / 2023
+Autor: Xavi Garcia (ElCiberProfe)
+Web: https://www.elciberprofe.com
+Lenguaje: JavaScript
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PEC 2 - El Tres en Raya</title>
+    <meta
+      name="description"
+      content="Juego del Tres en Raya desarrollado en JavaScript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Xavi Garcia (elciberprofe)" />
+    <meta name="copyright" content="Xavi Garcia (elciberprofe)" />
+    <link rel="stylesheet" href="./tres-en-raya.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"><h1>EL TRES EN RAYA</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="0" onclick="realizarTirada(this)"></td>
+          <td id="1" onclick="realizarTirada(this)"></td>
+          <td id="2" onclick="realizarTirada(this)"></td>
+        </tr>
+        <tr>
+          <td id="3" onclick="realizarTirada(this)"></td>
+          <td id="4" onclick="realizarTirada(this)"></td>
+          <td id="5" onclick="realizarTirada(this)"></td>
+        </tr>
+        <tr>
+          <td id="6" onclick="realizarTirada(this)"></td>
+          <td id="7" onclick="realizarTirada(this)"></td>
+          <td id="8" onclick="realizarTirada(this)"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            <h2 id="ganadorPartida">El Ganador es el Jugador: 0</h2>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="./tres-en-raya.js" async defer></script>
+  </body>
+</html>
